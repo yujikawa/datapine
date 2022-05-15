@@ -1,1 +1,1 @@
-DROP table a_test;
+DROP table if exists  a_test;

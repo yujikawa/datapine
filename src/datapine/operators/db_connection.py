@@ -8,12 +8,4 @@ class DBConnection():
         self.pj_name = pj_path.split(os.sep)[-1]
         os.makedirs(os.path.join(pj_path, "db"), exist_ok=True)
         self.db_path = os.path.join(pj_path, "db", f"{self.pj_name}.db")
-    #     self.conn = sqlite3.connect(self.db_path)
-
-    # def __enter__(self):
-    #     return self.conn
-
-    # def __exit__(self, type, value, traceback):
-    #     close(self.conn)
-
 
